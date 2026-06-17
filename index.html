@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Cult of Rudy Aceves</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="The Cult of Rudy Aceves home">
+      <span class="brand-mark">RA</span>
+      <span>Cult of Rudy</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#about">Doctrine</a>
+      <a href="#principles">Tenets</a>
+      <a href="#tributes">Testimonies</a>
+      <a href="#moments">Deployments</a>
+    </nav>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/rudy-hero.png" alt="Abstract gathering scene for a Rudy Aceves developer following">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">The unofficial developer cult of</p>
+        <h1 id="hero-title">Rudy Aceves</h1>
+        <p class="hero-copy">
+          A semi-serious shrine for the engineers, debuggers, reviewers, and terminal dwellers who have chosen Rudy as
+          their north star.
+        </p>
+        <div class="hero-actions" aria-label="Cult actions">
+          <a class="button primary" href="#tributes">Read the lore</a>
+          <a class="button secondary" href="#share">Submit a commit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro-band" id="about" aria-labelledby="about-title">
+      <div class="section-inner intro-grid">
+        <div>
+          <p class="section-kicker">The doctrine</p>
+          <h2 id="about-title">A cult following for engineers who ship, refactor, and revere Rudy.</h2>
+        </div>
+        <div class="intro-copy">
+          <p>
+            The Cult of Rudy Aceves is a harmless, highly opinionated gathering of software developers and engineers.
+            We speak in tickets, think in edge cases, and believe every incident review is better with Rudy in the room.
+          </p>
+          <p>
+            Membership requires no robes, no chanting, and no production deploys on Friday. Bring clean diffs, decent
+            variable names, and a willingness to treat Rudy's judgment as a surprisingly reliable design pattern.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="principles-section" id="principles" aria-labelledby="principles-title">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Sacred tenets</p>
+          <h2 id="principles-title">The engineering values of the Rudy faithful</h2>
+        </div>
+
+        <div class="principles-grid">
+          <article class="principle-card">
+            <span class="card-number">01</span>
+            <h3>Read the Logs</h3>
+            <p>Assume the stack trace has something to teach you. Rudy would check the evidence before naming the bug.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-number">02</span>
+            <h3>Respect the Review</h3>
+            <p>Comments should sharpen the code, not the ego. The Rudy way is direct, useful, and mergeable.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-number">03</span>
+            <h3>Ship With Care</h3>
+            <p>Move with urgency, keep the blast radius small, and leave the system easier to understand.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-band" aria-labelledby="quote-title">
+      <div class="section-inner quote-layout">
+        <div>
+          <p class="section-kicker">Current incantation</p>
+          <h2 id="quote-title">The Rudy commandment</h2>
+        </div>
+        <figure>
+          <blockquote id="rotating-quote">
+            "Thou shalt reproduce before thou shalt patch."
+          </blockquote>
+          <figcaption id="quote-caption">A rotating engineering proverb</figcaption>
+        </figure>
+        <button class="button compact" id="quote-button" type="button">Rotate proverb</button>
+      </div>
+    </section>
+
+    <section class="tributes-section" id="tributes" aria-labelledby="tributes-title">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Testimonies</p>
+          <h2 id="tributes-title">Filed by the Rudy faithful</h2>
+        </div>
+
+        <div class="tribute-grid" id="tribute-list" aria-live="polite">
+          <article class="tribute-card">
+            <p>"When prod is smoking and Slack is all caps, Rudy is the calm voice asking for the actual error message."</p>
+            <span>Backend Initiate</span>
+          </article>
+          <article class="tribute-card">
+            <p>"I once saw Rudy turn a three-day refactor debate into one diagram, two tests, and a merged pull request."</p>
+            <span>Staff Engineer</span>
+          </article>
+          <article class="tribute-card">
+            <p>"The cult is simple: write the code, name the thing, delete the dead branch, ask what Rudy would do."</p>
+            <span>Frontend Disciple</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="share-section" id="share" aria-labelledby="share-title">
+      <div class="section-inner share-layout">
+        <div>
+          <p class="section-kicker">Add to the lore</p>
+          <h2 id="share-title">Commit your testimony</h2>
+          <p class="share-copy">
+            Notes stay in this browser, like a local-only feature flag for devotion. No backend, no auth, no surprise
+            infrastructure.
+          </p>
+        </div>
+
+        <form class="tribute-form" id="tribute-form">
+          <label for="tribute-message">Testimony</label>
+          <textarea id="tribute-message" name="message" rows="5" maxlength="180" placeholder="Describe Rudy's impact on the codebase..." required></textarea>
+
+          <label for="tribute-author">Handle</label>
+          <input id="tribute-author" name="author" type="text" maxlength="32" placeholder="Your name, team, or GitHub handle" required>
+
+          <div class="form-footer">
+            <p><span id="character-count">0</span>/180</p>
+            <button class="button primary" type="submit">Commit testimony</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="moments-section" id="moments" aria-labelledby="moments-title">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Release history</p>
+          <h2 id="moments-title">Key deployments in Rudy lore</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <time datetime="2026">v0.1</time>
+            <h3>The repository is initialized</h3>
+            <p>The first followers gather around a static page, a hero image, and the belief that Rudy deserves release notes.</p>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2026">v0.2</time>
+            <h3>The engineering order forms</h3>
+            <p>Backend, frontend, platform, data, and QA members contribute stories from standups, incidents, and code reviews.</p>
+          </article>
+          <article class="timeline-item">
+            <time datetime="2026">v1.0</time>
+            <h3>The Rudy doctrine stabilizes</h3>
+            <p>The cult following matures into a living changelog of practical wisdom, better naming, and fewer mystery bugs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Maintained by the Cult of Rudy Aceves. <span id="year"></span></p>
+    <a href="#top">Back to altar</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
